@@ -14,10 +14,10 @@
 
 ul.sortlist{
     list-style-type: none;
-    font-size: 10em;
+    font-size: 100em;
 }
 ul.sortlist li{
-    font-size: 3px;
+    font-size: 100em;
     padding: 7px;
     border-bottom: dotted 1px #454545;
 }
