@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html>
+<head>
   <script src="https://www.w3schools.com/lib/w3.js"></script>
   <link rel="stylesheet" href="sample.css">
-<head>
-  <body bgcolor="#10100E" text="#cccccc">
-
-  <meta charset="UTF-8">
-  <title>ラスベガスパラDICE</title>
   <style>
     table {
       font-size: 3em;
     }
+    .rank-text {
+      position: absolute;
+      margin-left: -5em;
+    }
   </style>
 </head>
-<body>
+<body bgcolor="#10100E" text="#cccccc">
   <table>
-    <p class=title>最終チップ数TOP5</p>
-
-<button class="sort-btn" onclick="w3.sortHTML('#id01', 'li')">並べ替え</button>
-
-<ul id="id01" class="sortlist">
-  <li><font size="10px">8123 3-5 清原果耶</font></li>
-  <li><font size="100px">5623 2-3 つじのゆうと</font></li>
-  <li><font size="100px">9213 1-1 王騎将軍</font></li>
-  <li><font size="100px">9823 2-3 キラークイーン</font></li>
-  <li><font size="100px">9999 2-6 有村架純</font></li>
-</ul>
-    
+    <p class="title">最終チップ数TOP5</p>
+    <button class="sort-btn" onclick="w3.sortHTML('#id01', 'li')">並べ替え</button>
+    <ul id="id01" class="sortlist">
+      <li><span class="rank-text">1位：</span><font size="10px">8123 3-5 清原果耶</font></li>
+      <li><span class="rank-text">2位：</span><font size="100px">5623 2-3 つじのゆうと</font></li>
+      <li><span class="rank-text">3位：</span><font size="100px">9213 1-1 王騎将軍</font></li>
+      <li><span class="rank-text">4位：</span><font size="100px">9823 2-3 キラークイーン</font></li>
+      <li><span class="rank-text">5位：</span><font size="100px">9999 2-6 有村架純</font></li>
+    </ul>
   </table>
-      <div class="imgt">
-        <p class="title">ラスベガスパラDICE</p>
-        <img src="QR01.png"><br>
-        <p class="give">Give you the best casino experience.</p>
-          <p class="give">賭博をした者は、５０万円以下の罰金又は科料に処する。ただし、一時の娯楽に供する物を賭けたにとどまるときは、この限りでない。１回限りなどで習慣になっていなければ単純賭博罪となります。 刑罰は５０万円以下の罰金あるいは科料であり、比較的軽い部類の犯罪です。<p>
-    </div>
-
-    <style> 
+  <div class="imgt">
+    <p class="title">ラスベガスパラDICE</p>
+    <img src="QR01.png"><br>
+    <p class="give">Give you the best casino experience.</p>
+    <p class="give">賭博をした者は、５０万円以下の罰金又は科料に処する。ただし、一時の娯楽に供する物を賭けたにとどまるときは、この限りでない。１回限りなどで習慣になっていなければ単純賭博罪となります。 刑罰は５０万円以下の罰金あるいは科料であり、比較的軽い部類の犯罪です。</p>
+  </div>
+  <style> 
     div.imgt {
-       position:absolute;
-       top:38em;
-       left:em;
-       //border: 2px solid;
-       padding: 0px;
+      position: absolute;
+      top: 38em;
+      left: em;
+      padding: 0px;
     }
     p.title {
-        font-family: 'Arial Black','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
-        color: #eaf4fc;
-        font-size:4em;
-        line-height:80%;
-        margin: 0px;
+      font-family: 'Arial Black','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+      color: #eaf4fc;
+      font-size: 4em;
+      line-height: 80%;
+      margin: 0px;
     }
     p.give {
-      font-size:3em;
+      font-size: 3em;
     }
-    
+  </style>
 </body>
 </html>
