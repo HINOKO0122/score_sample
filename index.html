@@ -8,12 +8,12 @@
       font-size: 3em;
     }
     ul.sortlist li {
-      padding-left: 8em;
+      padding-left: 0; /* padding-leftを0に設定 */
       position: relative;
     }
     .rank-text {
       position: absolute;
-      left: 0;
+      left: -4em; /* 左側に移動させるため、leftを負の値に設定 */
       font-size: 2em;
       white-space: nowrap;
     }
@@ -28,29 +28,29 @@
   </style>
 </head>
 <body bgcolor="#10100E" text="#cccccc">
-    <p class="title">最終チップ数TOP5</p>
-    <button class="sort-btn" onclick="w3.sortHTML('#id01', 'li', '.list-value')">並べ替え</button>
-    <ul id="id01" class="sortlist">
-      <li><span class="list-value">8123 3-5 清原果耶</span></li>
-      <li><span class="list-value">5623 2-3 つじのゆうと</span></li>
-      <li><span class="list-value">9213 1-1 王騎将軍</span></li>
-      <li><span class="list-value">9823 2-3 キラークイーン</span></li>
-      <li><span class="list-value">9999 2-6 有村架純</span></li>
-    </ul>
-  　<table>
-  <tr><td>1位</td></tr>
-  <tr><td>2位</td></tr>
-  <tr><td>3位</td></tr>
-  <tr><td>4位</td></tr>
-  <tr><td>5位</td></tr>
-</table>
+  <p class="title">最終チップ数TOP5</p>
+  <button class="sort-btn" onclick="w3.sortHTML('#id01', 'li', '.list-value')">並べ替え</button>
+  <ul id="id01" class="sortlist">
+    <li><span class="rank-text">1位：</span><span class="list-value">8123 3-5 清原果耶</span></li>
+    <li><span class="rank-text">2位：</span><span class="list-value">5623 2-3 つじのゆうと</span></li>
+    <li><span class="rank-text">3位：</span><span class="list-value">9213 1-1 王騎将軍</span></li>
+    <li><span class="rank-text">4位：</span><span class="list-value">9823 2-3 キラークイーン</span></li>
+    <li><span class="rank-text">5位：</span><span class="list-value">9999 2-6 有村架純</span></li>
+  </ul>
+  <table>
+    <tr><td>1位</td></tr>
+    <tr><td>2位</td></tr>
+    <tr><td>3位</td></tr>
+    <tr><td>4位</td></tr>
+    <tr><td>5位</td></tr>
+  </table>
   <div class="imgt">
     <p class="title">ラスベガスパラDICE</p>
     <img src="QR01.png"><br>
     <p class="give">Give you the best casino experience.</p>
     <p class="give">賭博をした者は、５０万円以下の罰金又は科料に処する。ただし、一時の娯楽に供する物を賭けたにとどまるときは、この限りでない。１回限りなどで習慣になっていなければ単純賭博罪となります。 刑罰は５０万円以下の罰金あるいは科料であり、比較的軽い部類の犯罪です。</p>
   </div>
-  <style> 
+  <style>
     div.imgt {
       position: absolute;
       top: 38em;
