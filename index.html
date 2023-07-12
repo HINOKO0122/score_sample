@@ -8,17 +8,22 @@
       font-size: 3em;
     }
     ul.sortlist li {
-      padding-left: 8em;
+      padding-left: 2em;
       position: relative;
     }
     .rank-text {
       position: absolute;
-      right: 100%;
+      left: 0;
       margin-right: 0.5em;
-      font-size: 2em;
+      font-size: 1.3em;
+      white-space: nowrap;
     }
     .list-value {
-      font-size: 2em;
+      font-size: 1.3em;
+      display: inline-block;
+      max-width: calc(100% - 5em);
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   </style>
 </head>
