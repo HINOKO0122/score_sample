@@ -16,6 +16,7 @@ ul.sortlist{
     list-style-type: none;
 }
 ul.sortlist li{
+    font-size:3em;
     padding: 7px;
     border-bottom: dotted 1px #454545;
 }
