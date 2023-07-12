@@ -398,16 +398,3 @@ w3.displayObject = function (id, data) {
     a.innerHTML = a.innerHTML.replace(r, result);
   }
 };
-
-// 並び替えのコードを追加
-var list = w3.getElements(".list-value");
-var listArray = Array.from(list);
-listArray.sort(function(a, b) {
-  var aValue = parseInt(a.innerText);
-  var bValue = parseInt(b.innerText);
-  return aValue - bValue;
-});
-var listContainer = w3.getElements(".list-container")[0];
-for (var i = 0; i < listArray.length; i++) {
-  listContainer.appendChild(listArray[i]);
-}
