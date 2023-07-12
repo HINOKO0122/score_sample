@@ -1,0 +1,21 @@
+.sort-btn{
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #4CAF50;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+ul.sortlist{
+    list-style-type: none;
+}
+ul.sortlist li{
+    padding: 7px;
+    border-bottom: dotted 1px #454545;
+}
