@@ -10,6 +10,8 @@
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+    width: 10em;
+　  height:3em;
 }
 
 ul.sortlist{
